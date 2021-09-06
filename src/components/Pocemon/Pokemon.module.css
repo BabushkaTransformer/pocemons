@@ -1,0 +1,81 @@
+
+.Card {
+    position: relative;
+    box-sizing: border-box;
+    width: calc(25% - 18.75px);
+    border-radius: .25rem;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);;
+    padding: 1.5rem;
+    margin-right: 25px;
+    margin-top: 32px;
+}
+
+.Card:nth-child(4n + 4) {
+    margin-right: 0;
+}
+
+@media (max-width: 991px) {
+    .Card {
+        width: calc(33.333% - 11px);
+        margin-right: 16px;
+    }
+
+    .Card:nth-child(4n + 4) {
+        margin-right: 16px;
+    }
+
+    .Card:nth-child(3n + 3) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .Card {
+        width: calc(50% - 8px)
+    }
+
+    .Card:nth-child(4n + 4) {
+        margin-right: 16px;
+    }
+
+    .Card:nth-child(3n + 3) {
+        margin-right: 16px;
+    }
+
+    .Card:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+
+.Img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.Actions {
+    display: flex;
+}
+
+.Actions span {
+    background: none;
+    border: 1px solid #e2e8f0;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+
+.Actions span img {
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+.Actions .Active {
+    background-color: red;
+    transition: 0.3s ease;
+}

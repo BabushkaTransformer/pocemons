@@ -1,0 +1,38 @@
+.Header {
+    border-bottom: 1px solid silver;
+}
+
+.Container {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    padding-left: 12px;
+}
+
+.Logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.Nav {
+    display: flex;
+    align-items: center;
+}
+
+.Nav >a {
+    text-decoration: none;
+    color: deepskyblue;
+    margin-left: 20px;
+}
+.Active {
+    color: red !important;
+}
